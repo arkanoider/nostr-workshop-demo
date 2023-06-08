@@ -31,8 +31,8 @@
 
     // Configure our subscription settings.
     const subId   = crypto.randomUUID()
-    const filter  = { "authors": [ pubKey ] }
-
+    const filter  = {"authors":["mostrokey"],"kinds":[30000],"limit":50, "#k":["Sell"]}
+   
     socket.addEventListener('open', async function( e ) {
       // Log to console once we have an open connection. 
       console.log( "connected to " + relay )
